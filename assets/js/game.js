@@ -1,1 +1,18 @@
-window.alert("This is an alert! JavaScript is running!");
+var playerName = window.prompt("What is you Robot's name?");
+
+function fight() {
+    window.alert("The fighthas begun!");
+}
+
+var playerName = "Tony The Robot";
+
+var playerName = window.prompt("What is your robot's name");
+// Note the lack of quotation marks around playerName
+console.log(playerName);
+// fight();
+
+console.log("This logs a string, good for leaving yourself a message");
+//This woll do math and log 20
+console.log(10 + 10);
+//what is this
+console.log("Our robot's name is " + playerName);
