@@ -4,8 +4,11 @@
 //  *Defeat each enemy robot
 //"LOSE" - Player robot's health is zero or less
 
-var randomNumber = (10, 14)
+var randomNumber = function(min, max) {
+    var value = Math.floor(Math.random() * (max - min + 1) + min);
 
+    return value;
+}
 
 var fight = function(enemy) {
 
@@ -82,6 +85,7 @@ var fight = function(enemy) {
 
 
 var startGame = function() {
+
     //reset player stats
     playerInfo.reset();
     var randomNumber = function(min, max) {
